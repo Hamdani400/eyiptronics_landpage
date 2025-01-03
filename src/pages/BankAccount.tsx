@@ -1,4 +1,4 @@
-import { CreditCard, Copy, Scan, Check } from 'lucide-react'
+import { CreditCard, Copy, Scan } from 'lucide-react'
 
 // hooks
 import { useState } from 'react'
@@ -51,7 +51,7 @@ function BankAccount() {
             </div>
             <button
                 onClick={() => copyToClipboard(item.toClipboard)}
-                className={`transition-all duration-200 bg-green-600 hover:bg-green-700 rounded-full p-2 text-white`}
+                className="transition-all duration-200 bg-green-600 hover:bg-green-700 rounded-full p-2 text-white"
                 aria-label="Copy to clipboard"
             >
                 <Copy className="w-4 h-4" />
@@ -80,14 +80,15 @@ function BankAccount() {
                     {accountsCard}
 
                     <div className="flex flex-col items-center mb-1">
-                        {copied && <div className='mb-2 animate-popFade py-1 px-2 rounded-md bg-cyan-950 flex items-center'>
-                            <Check className="mr-2 w-[1rem] xl:w-[0.8vw]" /> <span className="font-medium text-xs text-white">Berhasil menyalin nomor rekening</span>
+                        {copied && <div className="mb-2 animate-popFade py-1 px-2 rounded-md bg-cyan-950 flex items-center">
+                            <span className="mr-1">&#10003;</span>
+                            <span className="font-medium text-xs text-white">Berhasil menyalin nomor rekening</span>
                         </div>}
                         <p className="mb-4 text-white font-bold text-xl">
                             a/n Erif Triandari
                         </p>
                         <div className="bg-gradient-to-br from-emerald-600 via-green-500 to-teal-600 backdrop-blur-3xl bg-opacity-75 p-4 rounded-2xl shadow-lg mb-4 w-fit transform hover:scale-105 transition-transform duration-200">
-                            <img src={qrisPict} alt="Qris Image" className='w-[10rem] h-[10rem] xl:w-[10vw] xl:h-[10vw]' />
+                            <img src={qrisPict} alt="Qris Image" className="w-[10rem] h-[10rem] xl:w-[10vw] xl:h-[10vw]" />
                         </div>
                         <p className="mb-4 text-white font-bold text-lg">
                             Eyiptronics
