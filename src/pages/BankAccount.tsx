@@ -81,7 +81,7 @@ function BankAccount() {
 
                     <div className="flex flex-col items-center mb-1">
                         {copied && <div className='mb-2 animate-popFade py-1 px-2 rounded-md bg-cyan-950 flex items-center'>
-                            <Check className='mr-2 w-[1rem] xl:w-[0.8vw]' /> <span className="font-medium text-xs text-white">Berhasil menyalin nomor rekening</span>
+                            <Check className="mr-2 w-[1rem] xl:w-[0.8vw]" /> <span className="font-medium text-xs text-white">Berhasil menyalin nomor rekening</span>
                         </div>}
                         <p className="mb-4 text-white font-bold text-xl">
                             a/n Erif Triandari
